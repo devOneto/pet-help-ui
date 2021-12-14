@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col m-3">
+        <div *ngFor="let user of users" class="col my-3 bg-warning p-3 text-light">
+            {{users.indexOf(user) + 1}}o (a)
+            <img class="user-img mx-2"
+                src="https://media.istockphoto.com/vectors/male-avatar-profile-picture-vector-id1164822188?k=20&m=1164822188&s=612x612&w=0&h=Jsyx0Ea7_cSdATgc0NHtzFUPt1YfNVKqF74ZkIrv5UM=">
+            <h4 class="d-inline">{{ user.name }}</h4>
+            {{user.points}} points
+        </div>
+    </div>
+</div>
